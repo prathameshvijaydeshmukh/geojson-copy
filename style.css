@@ -1,0 +1,30 @@
+.main-page {
+  background-color: rgb(209, 209, 228);
+  height: 620px;
+  width: 1292px;
+}
+
+.btn-group {
+  background-color: #fff;
+}
+
+.dropdown-item {
+  color: rgb(134, 134, 255);
+}
+
+.drop-edit {
+  position: absolute;
+  transform: translate3d(5px, 38px, 0px);
+  top: -2px !important;
+  left: -6px !important;
+  will-change: transform;
+}
+
+.btn-size {
+  width: 450px;
+  background-color: #fff;
+}
+.card {
+  border: none;
+  height: 600px;
+}

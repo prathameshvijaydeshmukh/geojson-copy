@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/5beeda7f3a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-page">
+      <div class="float-left">
+        <!-- left-header -->
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button
+            type="button"
+            class="btn btn-link"
+            id="one"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Open
+          </button>
+          <div class="dropdown-menu drop-edit" aria-labelledby="one">
+            <a class="dropdown-item" href="#">File</a>
+            <a class="dropdown-item" href="#">GitHub</a>
+            <a class="dropdown-item" href="#">Gist</a>
+          </div>
+
+          <div class="btn-group" role="group">
+            <button
+              id="btnGroupDrop1"
+              type="button"
+              class="btn btn-link"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Save
+            </button>
+            <div
+              class="dropdown-menu drop-edit"
+              aria-labelledby="btnGroupDrop1"
+            >
+              <a class="dropdown-item" href="#">GitHub</a>
+              <a class="dropdown-item" href="#">Gist</a>
+              <a class="dropdown-item" href="#">GeoJSON</a>
+              <a class="dropdown-item" href="#">TopoJSON</a>
+              <a class="dropdown-item" href="#">CSV</a>
+              <a class="dropdown-item" href="#">KML</a>
+              <a class="dropdown-item" href="#">WKT</a>
+              <a class="dropdown-item" href="#">shapefile</a>
+            </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button
+              id="btnGroupDrop2"
+              type="button"
+              class="btn btn-link"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              New
+            </button>
+          </div>
+
+          <div class="btn-group" role="group">
+            <button
+              id="btnGroupDrop3"
+              type="button"
+              class="btn btn-link"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              share
+            </button>
+          </div>
+          <div class="btn-group" role="group">
+            <button
+              id="btnGroupDrop4"
+              type="button"
+              class="btn btn-link"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              meta
+            </button>
+            <div
+              class="dropdown-menu drop-edit"
+              aria-labelledby="btnGroupDrop1"
+            >
+              <a class="dropdown-item" href="#">Add map layer</a>
+              <a class="dropdown-item" href="#">Zoom to features1</a>
+              <a class="dropdown-item" href="#">Add map layer</a>
+              <a class="dropdown-item" href="#">Zoom to features2</a>
+              <a class="dropdown-item" href="#">Add map layer</a>
+              <a class="dropdown-item" href="#">Zoom to features3</a>
+              <a class="dropdown-item" href="#">Add map layer</a>
+              <a class="dropdown-item" href="#">Zoom to features4</a>
+              <div class="dropright">
+                <button
+                  class="dropdown-item dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Dropright
+                </button>
+                <div class="dropdown-menu">
+                  <!-- Dropdown menu links -->
+                  <a class="dropdown-item" href="#">Zoom to features1</a>
+                  <a class="dropdown-item" href="#">Add map layer</a>
+                  <a class="dropdown-item" href="#">Zoom to features2</a>
+                  <a class="dropdown-item" href="#">Add map layer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-group" role="group">
+            <i class="fa-solid fa-file"></i>
+            <button
+              id="btnGroupDrop5"
+              type="button"
+              class="btn btn-link"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fa fa-file"></i>
+              unsaved
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- right-header -->
+      <div class="btn-size float-right">
+        <div class="top btn-size">
+          <button
+            class="btn"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            <i class="fa-solid fa-sort-down fa"></i>
+          </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
